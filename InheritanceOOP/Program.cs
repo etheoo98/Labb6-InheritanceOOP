@@ -8,7 +8,6 @@ using InheritanceOOP.Interfaces.Organisms;
 using InheritanceOOP.Interfaces.Organisms.Animals;
 using InheritanceOOP.Interfaces.Organisms.Animals.RoleSpecific;
 using InheritanceOOP.Interfaces.Organisms.Shared;
-using InheritanceOOP.Models.Organisms;
 using InheritanceOOP.Models.Organisms.Animals.Amphibians.Frogs;
 using InheritanceOOP.Models.Organisms.Animals.Mammals.Dogs;
 using InheritanceOOP.Models.Organisms.Animals.Mammals.Dogs.CompanionDogs;
