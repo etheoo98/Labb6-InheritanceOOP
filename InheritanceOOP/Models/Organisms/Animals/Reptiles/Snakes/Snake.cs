@@ -3,7 +3,7 @@ using InheritanceOOP.Interfaces.Organisms.Shared;
 
 namespace InheritanceOOP.Models.Organisms.Animals.Reptiles.Snakes;
 
-public class Snake : IAnimal, IAudibleEntity
+public class Snake : ISnake
 {
     public string ScientificName => "Serpentes";
     public string CommonName => "Snake";

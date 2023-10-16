@@ -3,10 +3,10 @@ using InheritanceOOP.Interfaces.Organisms.Shared;
 
 namespace InheritanceOOP.Models.Organisms.Animals.Amphibians.Frogs;
 
-public class Frog : IAnimal, IAudibleEntity
+public class Frog : IFrog
 {
-    public virtual string ScientificName => "Anura";
-    public virtual string CommonName => "Frog";
+    public string ScientificName => "Anura";
+    public string CommonName => "Frog";
     public AnimalType AnimalType => AnimalType.Amphibian;
     public bool IsWild => true;
     public Gender Gender { get; }

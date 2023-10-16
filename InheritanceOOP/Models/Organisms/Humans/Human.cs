@@ -3,7 +3,7 @@ using InheritanceOOP.Interfaces.Organisms.Shared;
 
 namespace InheritanceOOP.Models.Organisms.Humans;
 
-public abstract class Human : IHuman, INamedEntity, IAudibleEntity, IGenderedEntity
+public abstract class Human : IHuman
 {
     private string? _personalName;
 

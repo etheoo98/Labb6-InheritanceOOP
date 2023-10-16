@@ -5,7 +5,7 @@ public interface IServiceDog
 {
     /*
      * Specify the amount of years the service dog has been in training for.
-     * This could potentially be used as a condition in AssistEvent();
+     * This can be used as a condition in AssistEvent();
      */
     public int YearsOfTraining { get; }
     // Implementations should contain a scenario where the service dog assists someone.

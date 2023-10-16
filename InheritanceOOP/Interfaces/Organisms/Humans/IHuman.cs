@@ -1,7 +1,9 @@
-﻿namespace InheritanceOOP.Interfaces.Organisms.Humans;
+﻿using InheritanceOOP.Interfaces.Organisms.Shared;
 
-// Inheritors of this interface should be considered as humans.
-public interface IHuman : IOrganism
+namespace InheritanceOOP.Interfaces.Organisms.Humans;
+
+// Inheritors of this interface are considered as belonging to a human species.
+public interface IHuman : IOrganism, INamedEntity, IAudibleEntity, IGenderedEntity
 {
     public DateTime DateOfBirth { get; }
 }

@@ -3,7 +3,7 @@ using InheritanceOOP.Interfaces.Organisms.Shared;
 
 namespace InheritanceOOP.Models.Organisms.Animals.Mammals.Dogs;
 
-public class Dog : INamedEntity, IAnimal, IAudibleEntity
+public class Dog : IDog
 {
     private string? _personalName;
 
