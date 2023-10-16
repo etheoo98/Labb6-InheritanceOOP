@@ -4,8 +4,6 @@
  * Date: October 15, 2023
  */
 
-using InheritanceOOP.Interfaces.Organisms;
-using InheritanceOOP.Interfaces.Organisms.Animals;
 using InheritanceOOP.Interfaces.Organisms.Animals.RoleSpecific;
 using InheritanceOOP.Interfaces.Organisms.Shared;
 using InheritanceOOP.Models.Organisms.Animals.Amphibians.Frogs;
