@@ -22,46 +22,27 @@ internal static class Program
 {
     public static void Main()
     {
-        // Create a list of IOrganisms by object reference
-        var organisms = new List<IOrganism>
-        {
-            new Frog(Gender.Male),
-            new Snake(Gender.Female),
-            new Dog("Tyson", Gender.Male),
-            new HomoSapiens("Billy", new DateTime(1973, 10, 12), Gender.Male),
-            new GuardGermanShepherd("Roxy", Gender.Female),
-            new ServiceGoldenRetriever("Bogoslav", Gender.Male, 5),
-            new Pomeranian("Timo", Gender.Male),
-            new FrenchMarigold()
-        };
+        var frog = new Frog(Gender.Male);
+        var snake = new Snake(Gender.Female, true);
+        var dog = new Dog("Tyson", Gender.Male);
+        var homoSapiens = new HomoSapiens("Billy", new DateTime(1973, 10, 12), Gender.Male);
+        var guardGermanShepherd = new GuardGermanShepherd("Roxy", Gender.Female);
+        var serviceGoldenRetriever = new ServiceGoldenRetriever("Bogoslav", Gender.Male, 5);
+        var pomeranian = new Pomeranian("Timo", Gender.Male);
+        var frenchMarigold = new FrenchMarigold();
+
+        Console.WriteLine($"The {frog.CommonName.ToLower()} {frog.MakeSound.ToLower()}.");
+        Console.WriteLine($"The {snake.CommonName.ToLower()} {snake.MakeSound.ToLower()}.");
+        Console.WriteLine($"The {dog.CommonName.ToLower()} {dog.MakeSound.ToLower()}.");
+        Console.WriteLine($"\n{homoSapiens.PersonalName} the {homoSapiens.CommonName} says: \"{homoSapiens.MakeSound}\"");
+        Console.WriteLine($"\n{guardGermanShepherd.GuardEvent()}");
+        Console.WriteLine($"\n{serviceGoldenRetriever.AssistEvent()}");
+        Console.WriteLine($"\n{pomeranian.Pet()}");
+        Console.WriteLine($"\n{pomeranian.Play()}");
+        Console.WriteLine($"\n{pomeranian.Feed(PetFood.Meat)}");
+        Console.WriteLine($"\n{snake.SnakeEncounter()}");
+        Console.WriteLine($"\n{frog.Leap()}");
         
-        // Iterate over each element in the list.
-        foreach (var organism in organisms)
-        {
-            // Check if current element matches any case.
-            switch (organism)
-            {
-                case IGuardDog guardDog:
-                    Console.WriteLine($"\n{guardDog.GuardEvent()}");
-                    break;
-                case IServiceDog serviceDog:
-                    Console.WriteLine($"\n{serviceDog.AssistEvent()}");
-                    break;
-                case Pomeranian pomeranian:
-                    Console.WriteLine($"\n{pomeranian.Pet()}");
-                    Console.WriteLine($"\n{pomeranian.Play()}");
-                    Console.WriteLine($"\n{pomeranian.Feed(PetFood.Meat)}");
-                    break;
-                case Human human:
-                    Console.WriteLine($"\n{human.PersonalName} the {human.CommonName} says: \"{human.MakeSound}\"");
-                    break;
-                case IAnimal animal and IAudibleEntity audibleEntity:
-                    Console.WriteLine($"The {animal.CommonName.ToLower()} {audibleEntity.MakeSound.ToLower()}.");
-                    break;
-                default:
-                    Console.WriteLine($"\nThe scientific name of {organism.CommonName} is {organism.ScientificName}.");
-                    break;
-            }
-        }
+        Console.WriteLine($"\nThe scientific name of {frenchMarigold.CommonName} is {frenchMarigold.ScientificName}.");
     }
 }
