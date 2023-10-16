@@ -1,6 +1,6 @@
 ﻿/*
  * Author: Theodor Hägg (.NET23)
- * Website: https://www.github.com/etheoo98/Labb5-InheritanceOOP
+ * Website: https://www.github.com/etheoo98/Labb6-InheritanceOOP
  * Date: October 15, 2023
  */
 
