@@ -22,7 +22,7 @@ internal static class Program
 {
     public static void Main()
     {
-        // Create a list of IOrganisms
+        // Create a list of IOrganisms by object reference
         var organisms = new List<IOrganism>
         {
             new Frog(Gender.Male),
@@ -42,13 +42,15 @@ internal static class Program
             switch (organism)
             {
                 case IGuardDog guardDog:
-                    Console.WriteLine(guardDog.GuardEvent());
+                    Console.WriteLine($"\n{guardDog.GuardEvent()}");
                     break;
                 case IServiceDog serviceDog:
-                    Console.WriteLine(serviceDog.AssistEvent());
+                    Console.WriteLine($"\n{serviceDog.AssistEvent()}");
                     break;
-                case IPet pet:
-                    Console.WriteLine($"\n{pet.Pet()}");
+                case Pomeranian pomeranian:
+                    Console.WriteLine($"\n{pomeranian.Pet()}");
+                    Console.WriteLine($"\n{pomeranian.Play()}");
+                    Console.WriteLine($"\n{pomeranian.Feed(PetFood.Meat)}");
                     break;
                 case Human human:
                     Console.WriteLine($"\n{human.PersonalName} the {human.CommonName} says: \"{human.MakeSound}\"");
