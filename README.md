@@ -1,3 +1,5 @@
+[![wakatime](https://wakatime.com/badge/github/etheoo98/Labb6-InheritanceOOP.svg)](https://wakatime.com/badge/github/etheoo98/Labb6-InheritanceOOP)
+
 # Labb6-InheritanceOOP
 C# console application made for a beginners programming course.
 
